@@ -1,9 +1,103 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+
+* {
     margin: 0;
     padding: 0;
-    background-color: teal;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: white;
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.card {
+    margin-top: 12%;
+    width: 345px;
+    height: 360px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.card-top {
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+}
+.card-top img {
+    margin-top: 28%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    overflow: hidden;
+}
+
+.card-bottom {
+    padding-top: 20%;
+
+}
+
+.age, .location, .social {
+    font-weight: 700;
+    color: grey;
+    padding-top: 6px;
+    font-size: 0.7rem;
+    opacity: .5;
+}
+
+.row {
+    border-top: 1px solid hsl(0, 0%, 81%);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 7%;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+.social {
+    font-size: .5rem;
+    letter-spacing: 1px;
+}
+
+.card-bottom .name-age {
+    display: flex;
+    padding-left: 30%;
+}
+.card-bottom .name-age .age {
+    padding-left: 10px;
+    font-size: 0.9rem;
+    padding-top: 1px;
+}
+.card-bottom .location {
+    padding-bottom: 2.5%;
+    margin-bottom: 5%;
+    font-size: 0.8rem;
+}
+
+.bg .bg1, .bg .bg2 {
+    position: absolute;
+    overflow: hidden;
+}
+
+.bg .bg1 {
+    top: -500px;
+    left: -200px;   
+}
+.bg .bg2 {
+    bottom: -850px;
+    right: -200px;
+}
+
+h3 {
+    font-size: 1.1rem;
 }
